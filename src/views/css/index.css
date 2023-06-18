@@ -1,0 +1,145 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+body {
+	background: #f1f1f1;
+}
+
+header {
+	display: flex;
+	height: 5rem;
+	width: 100%;
+	background: rgb(29, 146, 146);
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 0 0 1rem black;
+	cursor: pointer;
+}
+
+img {
+	flex: 1;
+	width: 12%;
+	aspect-ratio: 3/2;
+	filter: brightness(110%);
+	object-fit: contain;
+}
+
+h1 {
+	flex: 3;
+	text-align: center;
+	color: rgb(221, 189, 10);
+}
+
+ul {
+	flex: 1;
+	display: flex;
+}
+
+ul > li {
+	flex: 1;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+	border-bottom: 0px solid black;
+	transition: all 0.5s ease-in-out;
+	padding: 0.1rem;
+}
+
+li > span {
+	transition: all 0.5s ease-in-out;
+}
+li > span:hover {
+	border-bottom: 3px solid black;
+}
+
+.container {
+	margin: 3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	display: flex;
+	align-items: center;
+	border-radius: 5px;
+	padding: 1rem;
+	box-shadow: 0 0 5px black;
+	border: 2px solid black;
+	flex-direction: column;
+}
+
+.card > img {
+	box-shadow: 0 0 10px black;
+	width: 13rem;
+	height: 13rem;
+	margin: 1rem;
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 0.5rem;
+}
+
+.card > input[type="text"] {
+	font-weight: 550;
+	font-style: normal;
+	font-size: 1rem;
+	padding: 1rem;
+	color: black;
+	margin: 0.5rem 0;
+	border-radius: 0.5rem;
+	width: 90%;
+}
+
+.recover {
+	margin: 1rem 0 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+
+.recover > hr {
+	background: black;
+	margin: 0 2rem;
+	height: 1.5rem;
+	width: 0.1rem;
+}
+
+.recover > span {
+	color: rgb(32, 121, 255);
+	font-weight: 570;
+	cursor: pointer;
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.actions > input {
+	flex: 1;
+	margin: 0 2rem;
+	padding: 0.5rem;
+	border: 0.2rem solid black;
+	box-shadow: 0 0 0.5rem black;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	color: rgb(212, 212, 212);
+	background: rgb(31, 138, 138);
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.actions > input:hover {
+	border-color: rgb(49, 158, 158);
+	background: black;
+}

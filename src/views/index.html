@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<!-- <script src="@socket.io/socket.io.js"></script> -->
+	<title>Build in BatsWorks</title>
+	<script src="./js/login.js" defer></script>
+	<script src="/javascript" defer></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
+	</link>
+	<link rel="stylesheet" type="text/css" href="/style" media="screen">
+	</link>
+</head>
+
+<body>
+	<header>
+		<img src="/img/logo.png" />
+		<h1>BatsWorks</h1>
+		<ul>
+			<li><span>contato</span></li>
+			<li><span>login</span></li>
+			<li><span>about</span></li>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div class="card">
+			<img src="/img/default_user.png" alt="">
+			<input type="text" placeholder="usuario" minlength="5" maxlength="30" id="user">
+			<input type="text" placeholder="senha" minlength="6" maxlength="6" id="pass">
+
+			<div class="actions">
+				<input type="submit" value="entrar" onclick="login()">
+				<input type="reset" value="limpar" onclick="clean()">
+			</div>
+			<div class="recover">
+				<span>esqueci a senha</span>
+				<hr>
+				<span>criar login</span>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

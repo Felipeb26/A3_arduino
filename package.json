@@ -1,0 +1,20 @@
+{
+	"name": "a3_arduino",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "nodemon src/server.js -w"
+	},
+	"dependencies": {
+		"@serialport/parser-readline": "^11.0.0",
+		"ejs": "^3.1.9",
+		"express": "^4.18.2",
+		"johnny-five": "^2.1.0",
+		"nodemon": "^2.0.22",
+		"router": "^1.3.8",
+		"serialport": "9.0.1",
+		"socket.io": "^4.5.1",
+		"socket.io-client": "^4.5.1"
+	}
+}
