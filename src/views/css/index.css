@@ -21,9 +21,8 @@ header {
 	cursor: pointer;
 }
 
-img {
-	flex: 1;
-	width: 12%;
+header > img {
+	width: 10%;
 	aspect-ratio: 3/2;
 	filter: brightness(110%);
 	object-fit: contain;

@@ -30,7 +30,6 @@ io.on("connection", function (socket) {
 	});
 
 	socket.on("1", (ligar) => {
-		console.log(ligar);
 		serial.write(ligar.toString());
 	});
 

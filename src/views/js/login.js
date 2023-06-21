@@ -7,26 +7,29 @@ function clean() {
 	pass.value = "";
 }
 
-function login() {
+async function login() {
 	const username = user.value;
 	const password = pass.value;
 
-	const userIsValid = nonNull(username);
-	const passIsValid = nonNull(password);
+	const userIsValid = await nonNull(username);
+	const passIsValid = await nonNull(password);
 
 	if (!userIsValid && !passIsValid) {
 		window.alert("erro ao fazer login");
 	}
 
-	ledControll(1);
-	setTimeout(() => ledControll(2), 1500);
+	if (username == "felipe" && password == "262626") {
+		await ledControll(1);
+		setTimeout(() => ledControll(2), 8000);
+	}
 }
 
-function ledControll(command) {
-	socket.emit(command, command);
-}
+const ledControll = async (command) => {
+	console.log(command);
+	await socket.emit(command, command);
+};
 
-function nonNull(value) {
+async function nonNull(value) {
 	console.log(value);
 	console.log(typeof value);
 	if (value == null || (value instanceof String && value.trim() == ""))
